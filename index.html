@@ -51,7 +51,25 @@ article{
       <button>🖤​<span>0</span></button>
   </div>      
     </article>
-   
-   </main>
+    </main>
+
+     <script>
+        const botoes= document.querSelectorAll ("button");
+        botoes.forEach(function(button){
+           let curtiu=false;
+           botao.addEventListener("click", botaoClicado);
+           function botaoclicado() {
+              console.log("fui clicado");
+              let texto=botao.querySelector("span")
+              if (curtiu===false){
+                 texto.texeContent++;
+                 curtiu=true;
+              }else{
+                 texto.textContent--;
+                 curtiu=false;
+              }
+           }
+        });
+                 </script>
  </body>
 </html>
